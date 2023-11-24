@@ -1,0 +1,153 @@
+import os
+import re
+'''
+def is_binary(n):
+    for digit in str(n):
+        if digit !='0' and digit !='1':
+            return False
+    return True
+if is_binary("1010"):
+    print("1010 is a binary number")
+else:
+    print("1010 is not a binary number")
+
+str=input("Enter a string:")
+if (str == str[::-1]):
+    print("the string is a palindrome")
+else:
+    print("not a palindrome")
+
+def is_palindrome(word):
+    length =len(word)
+    for i in range(length//2):
+        if word [i]!=word[length-i-1]:
+            return False
+    return True
+print(is_palindrome("bab"))
+
+l1=[1,2,3]
+l2=[4,5,6]
+merge_list=l1+l2
+print(merge_list)
+l1.extend(l2)
+print(l1)
+
+l1=['1,2,3']
+l2=['4,5,6']
+o=l1+l2
+print(o)
+ow=''.join(sorted(l1+l2))
+print(ow)
+
+# TO PERFORM LEFT-ROTATE -BY-two
+def left_rotate(inputlist):
+    if len(inputlist)<2:
+        return inputlist
+    else:
+        return inputlist[2:]+inputlist[:2]
+original_list =[1,2,3,4]
+result = left_rotate(original_list)
+print(original_list)
+print("left rotated:",result)
+
+def right_rotate(input):
+    if len(input)<2:
+        return input
+    else:
+        return input[-2:]+input[:-2]
+original_list=[1,2,3,4,5,6,7,8]
+result= right_rotate(original_list)
+print(original_list)
+print(result)
+
+#FIND TOP MAXIMUM NUMBERS
+def top_two(numbers):
+    max1=float(input("Enter the string:"))
+    max2=float(input("Enter the string:"))
+    for num in numbers:
+        if num >max1:
+            max2=max1
+            max1=num
+        elif num >max2:
+            max2 = num
+    return max1,max2
+
+numbers=[10,5,15,7,20,25]
+max1,max2 =top_two(numbers)
+print("max1:",max1)
+print("max2:",max2)
+
+def top_two(numbers):
+    max1 = float('-inf')
+    max2 = float('-inf')
+    
+    for num in numbers:
+        if num > max1:
+            max2 = max1
+            max1 = num
+        elif num > max2:
+            max2 = num
+            
+    return max1, max2
+
+numbers = [10, 5, 15, 7, 20, 25]
+max1, max2 = top_two(numbers)
+print("max1:", max1)
+print("max2:", max2)
+max1=float(input("enter the string:"))
+    max2=float(input("Enter the string:"))
+def top_two(numbers):
+    for i in numbers:
+        if i>max1:
+            max2=max1
+            max1=i
+        elif i > max2:
+            max2= i
+    return max1,max2
+numbers=[56,78,88,456]
+print(top_two(numbers))
+
+def top_two(numbers):
+    max1=int(input("Enter the number:"))
+    max2=int(input("Enter the number:"))
+    for num in numbers:
+        if num>max1:
+            max1=max2
+            max1=num
+        elif num>max2:
+            max2=num
+    return max1,max2
+numbers=[11,22,33,344,7654]
+print(top_two(numbers))
+
+def is_perfectnumber(n):
+    if n<0:
+        return False
+    divisor_num=0
+    for i in range(1,n):
+        if n%i ==0:
+            divisor_num +=i
+    return divisor_num ==n
+num=28
+if is_perfectnumber(num):
+    print("is a perfect number:")
+else:
+    print("is not a perfect number:")
+'''
+def replace_vowels(input_str):
+    vowels='aeiouAEIOU'
+    for chr in input_str:
+        if chr in vowels:
+            return input_str.replace(chr,'_',1)
+givenstring='replace vowels'
+cc=replace_vowels(givenstring)
+print(cc)
+
+
+
+
+
+
+
+
+
